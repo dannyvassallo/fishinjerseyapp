@@ -1,26 +1,26 @@
 <head>
   <title>fishinjerseyapp</title>
   <script>
-  $(function(){
-  jQuery.get( "http://fishinjersey.com/wp-json/posts", function( data ) {
-    var post_count = 0
-    jQuery.each(data, function(index, post) {
-      var id = post_count++
-      var title = post.title;
-      var time_stamp = post.date;
-      var category = post.terms["category"][0]["name"];
-      var image = post.featured_image['source'];
-      var link = post.link;    
-      jQuery('body').append("<div class=\"post-\""+id+"\">");    
-      jQuery('body').append("<h2>"+title+"</h2>");
-      jQuery('body').append("<img src="+image+">");    
-      jQuery('body').append("<p>"+time_stamp+"</p>");    
-      jQuery('body').append("<p>"+category+"</p>");
-      jQuery('body').append("<a href=\""+link+">link</a>");    
-      jQuery('body').append("</div>"); 
-    });
-  });
-});
+//   $(function(){
+//   jQuery.get( "http://fishinjersey.com/wp-json/posts", function( data ) {
+//     var post_count = 0
+//     jQuery.each(data, function(index, post) {
+//       var id = post_count++
+//       var title = post.title;
+//       var time_stamp = post.date;
+//       var category = post.terms["category"][0]["name"];
+//       var image = post.featured_image['source'];
+//       var link = post.link;    
+//       jQuery('body').append("<div class=\"post-\""+id+"\">");    
+//       jQuery('body').append("<h2>"+title+"</h2>");
+//       jQuery('body').append("<img src="+image+">");    
+//       jQuery('body').append("<p>"+time_stamp+"</p>");    
+//       jQuery('body').append("<p>"+category+"</p>");
+//       jQuery('body').append("<a href=\""+link+">link</a>");    
+//       jQuery('body').append("</div>"); 
+//     });
+//   });
+// });
   </script>
 </head>
 

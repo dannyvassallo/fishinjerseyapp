@@ -1,4 +1,4 @@
-BrowserPolicy.framing.allowAll()
+BrowserPolicy.content.allowOriginForAll('*')
 
 Meteor.methods({
   'getPosts': function(){    
