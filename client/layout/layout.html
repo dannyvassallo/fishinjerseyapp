@@ -1,11 +1,15 @@
 <template name="layout">
-{{#each posts}}  
-  <a href="{{link}}">
-    <p>{{title}}</p>
-    <p>{{date}}</p>
-    <img class="img-responsive" src={{featured_image.source}}>
-    <p>{{excerpt}}</p>
-    
-  </a>
-{{/each}}
+  <div class="container">
+    <div class="row">
+    {{#each posts}}  
+      <div class="col-md-2">
+        <p>{{title}}</p>
+        <p>{{date}}</p>
+        <a href="{{link}}">
+          <img class="full-w" src={{featured_image.source}}>
+        </a> 
+      </div>
+    {{/each}}
+    </div>
+  </div>
 </template>

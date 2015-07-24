@@ -9,5 +9,6 @@ autopublish
 insecure
 jquery
 http
-bootstrap
 browser-policy
+fourseven:scss@2.1.1
+reywood:bootstrap3-sass
